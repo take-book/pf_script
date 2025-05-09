@@ -1,0 +1,203 @@
+<!-- templates/projects.html -->
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="content-box">
+    <h2>プロジェクト一覧</h2>
+    
+    <div class="intro-text">
+        <img src="/static/images/projects.gif" alt="Projects" class="float-left">
+        <p>私が取り組んだプロジェクトを紹介します。個人開発と業務で携わったプロジェクトの両方を掲載しています。</p>
+        <p>下記プロジェクトのソースコードの一部はGitHubで公開していますので、ご興味があればご覧ください。</p>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<div class="content-box">
+    <h2><img src="/static/images/hot.gif" alt="HOT"> 主要プロジェクト</h2>
+    
+    <div class="project-item">
+        <h3>Sanicを使用したWebポートフォリオサイト</h3>
+        <div class="project-meta">
+            <span class="project-date">開発期間: 2025年4月〜5月</span>
+            <span class="project-tech">使用技術: Python, Sanic, HTML, CSS, JavaScript</span>
+        </div>
+        
+        <div class="project-content">
+            <img src="/static/images/project1.jpg" alt="プロジェクト1" class="float-right project-img">
+            <p>2000年代のインターネット文化を再現したレトロなポートフォリオサイト（このサイト）です。</p>
+            <p>Sanicフレームワークを使用して構築し、Jinja2テンプレートエンジンでHTMLレンダリングを行っています。</p>
+            <p>訪問者カウンター、時計表示、マーキータグなど、懐かしいWeb要素を再現しました。</p>
+            
+            <div class="project-details">
+                <h4>主な機能：</h4>
+                <ul>
+                    <li>レトロなデザインとレイアウト</li>
+                    <li>訪問者カウンター</li>
+                    <li>リアルタイム時計表示</li>
+                    <li>2000年代風のナビゲーション</li>
+                </ul>
+            </div>
+            
+            <div class="project-links">
+                <a href="#" class="project-link">デモを見る</a>
+                <a href="https://github.com/username/retro-portfolio" class="project-link" target="_blank">GitHubで見る</a>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    
+    <div class="project-item">
+        <h3>オンラインメモ帳アプリケーション</h3>
+        <div class="project-meta">
+            <span class="project-date">開発期間: 2024年10月〜2025年1月</span>
+            <span class="project-tech">使用技術: Python, Flask, SQLite, JavaScript, Bootstrap</span>
+        </div>
+        
+        <div class="project-content">
+            <img src="/static/images/project2.jpg" alt="プロジェクト2" class="float-right project-img">
+            <p>ブラウザ上で動作するシンプルなメモ帳アプリケーションです。</p>
+            <p>Flaskフレームワークを使用し、SQLiteデータベースでメモを管理します。</p>
+            <p>ユーザー認証機能を実装し、メモの保存、編集、削除、検索が可能です。</p>
+            
+            <div class="project-details">
+                <h4>主な機能：</h4>
+                <ul>
+                    <li>ユーザー登録・ログイン機能</li>
+                    <li>メモの作成・編集・削除</li>
+                    <li>タグ付け機能</li>
+                    <li>全文検索機能</li>
+                    <li>メモの共有機能</li>
+                </ul>
+            </div>
+            
+            <div class="project-links">
+                <a href="#" class="project-link">デモを見る</a>
+                <a href="https://github.com/username/online-notepad" class="project-link" target="_blank">GitHubで見る</a>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    
+    <div class="project-item">
+        <h3>天気予報API連携Webアプリ</h3>
+        <div class="project-meta">
+            <span class="project-date">開発期間: 2024年7月〜9月</span>
+            <span class="project-tech">使用技術: Python, Django, React, OpenWeatherMap API</span>
+        </div>
+        
+        <div class="project-content">
+            <img src="/static/images/project3.jpg" alt="プロジェクト3" class="float-right project-img">
+            <p>OpenWeatherMap APIを利用した天気予報表示アプリケーションです。</p>
+            <p>DjangoとReactを組み合わせて構築し、世界中の都市の天気情報をリアルタイムで取得、表示します。</p>
+            <p>都市の追加、削除、お気に入り登録などの機能を実装しました。</p>
+            
+            <div class="project-details">
+                <h4>主な機能：</h4>
+                <ul>
+                    <li>世界中の都市の天気情報表示</li>
+                    <li>5日間の天気予報表示</li>
+                    <li>都市のお気に入り登録</li>
+                    <li>気温、湿度、風速などの詳細情報表示</li>
+                    <li>地図上での天気表示</li>
+                </ul>
+            </div>
+            
+            <div class="project-links">
+                <a href="#" class="project-link">デモを見る</a>
+                <a href="https://github.com/username/weather-app" class="project-link" target="_blank">GitHubで見る</a>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<div class="content-box">
+    <h2>ミニプロジェクト</h2>
+    
+    <div class="mini-projects">
+        <table class="mini-projects-table">
+            <tr>
+                <th>プロジェクト名</th>
+                <th>説明</th>
+                <th>使用技術</th>
+                <th>リンク</th>
+            </tr>
+            <tr>
+                <td>シンプル電卓</td>
+                <td>ブラウザで動作する基本的な計算機</td>
+                <td>HTML, CSS, JavaScript</td>
+                <td><a href="#" target="_blank">詳細</a></td>
+            </tr>
+            <tr>
+                <td>Todoリスト</td>
+                <td>タスク管理ができるシンプルなTodoアプリ</td>
+                <td>React, LocalStorage</td>
+                <td><a href="#" target="_blank">詳細</a></td>
+            </tr>
+            <tr>
+                <td>スクレイピングツール</td>
+                <td>指定したWebサイトから情報を取得するツール</td>
+                <td>Python, BeautifulSoup, Pandas</td>
+                <td><a href="#" target="_blank">詳細</a></td>
+            </tr>
+            <tr>
+                <td>マークダウンエディタ</td>
+                <td>リアルタイムプレビュー付きのマークダウンエディタ</td>
+                <td>Vue.js, Marked.js</td>
+                <td><a href="#" target="_blank">詳細</a></td>
+            </tr>
+            <tr>
+                <td>チャットボット</td>
+                <td>簡単な応答ができるLINE風チャットボット</td>
+                <td>Python, Flask, NLTK</td>
+                <td><a href="#" target="_blank">詳細</a></td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="content-box">
+    <h2>業務プロジェクト</h2>
+    
+    <div class="work-projects">
+        <p class="note">※ 守秘義務の関係上、詳細な情報は控えさせていただきます。</p>
+        
+        <div class="work-project-item">
+            <h3>ECサイトリニューアル</h3>
+            <p>某企業のECサイトのリニューアルプロジェクトに参加。バックエンド部分を担当し、APIの設計と実装を行いました。</p>
+            <p><b>担当部分</b>: バックエンドAPI開発、データベース設計</p>
+            <p><b>使用技術</b>: Python, Django REST Framework, PostgreSQL</p>
+        </div>
+        
+        <div class="work-project-item">
+            <h3>社内業務効率化システム</h3>
+            <p>社内の業務プロセスを効率化するためのWebシステムを開発。工数管理、タスク管理、レポート自動生成などの機能を実装しました。</p>
+            <p><b>担当部分</b>: 全体設計、バックエンド開発、フロントエンド一部</p>
+            <p><b>使用技術</b>: Python, Flask, SQLAlchemy, JavaScript, Bootstrap</p>
+        </div>
+        
+        <div class="work-project-item">
+            <h3>データ分析ダッシュボード</h3>
+            <p>顧客データを分析し、可視化するダッシュボードを開発。リアルタイムでデータを集計し、グラフやチャートで表示します。</p>
+            <p><b>担当部分</b>: データ処理部分、グラフ描画ロジック</p>
+            <p><b>使用技術</b>: Python, Pandas, Flask, D3.js</p>
+        </div>
+    </div>
+</div>
+
+<div class="content-box">
+    <h2>開発中のプロジェクト</h2>
+    
+    <div class="coming-soon">
+        <img src="/static/images/coming-soon.gif" alt="Coming Soon" class="center-img">
+        <p>現在、以下のプロジェクトを開発中です：</p>
+        <ul>
+            <li>AIを活用した画像認識アプリ</li>
+            <li>暗号資産のトレンド分析ツール</li>
+            <li>音声認識を使った議事録作成アプリ</li>
+        </ul>
+        <p>完成次第、このページで公開予定です。乞うご期待！</p>
+    </div>
+</div>
+{% endblock %}

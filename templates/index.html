@@ -1,0 +1,43 @@
+<!-- templates/index.html -->
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="content-box">
+    <h2>ようこそ、私のポートフォリオサイトへ！</h2>
+    
+    <div class="welcome-message">
+        <img src="/static/images/construction.gif" alt="工事中" class="float-right">
+        <p>こんにちは！私のレトロスタイルのポートフォリオサイトへようこそ。</p>
+        <p>このサイトは2000年代の懐かしいインターネット文化への敬意を込めて制作されました。</p>
+        <p>左のメニューから各コンテンツにアクセスできます。</p>
+        <div class="clear"></div>
+    </div>
+    
+    <div class="news-section">
+        <h3>最新情報</h3>
+        <ul>
+            <li><span class="date">2025-05-08</span> ポートフォリオサイトを開設しました！</li>
+            <li><span class="date">2025-05-07</span> 新しいプロジェクトを追加しました。</li>
+            <li><span class="date">2025-05-06</span> プロフィールを更新しました。</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-box">
+    <h2>ピックアップ・プロジェクト</h2>
+    <div class="project-highlight">
+        <h3>Webアプリケーション制作</h3>
+        <img src="/static/images/project-thumb1.jpg" alt="プロジェクト1" class="float-left">
+        <p>Python/Sanicを使用した最新のWebアプリケーション開発事例です。詳細は<a href="/projects">こちら</a>をご覧ください。</p>
+        <div class="clear"></div>
+    </div>
+</div>
+
+<div class="content-box">
+    <h2>お知らせ</h2>
+    <div class="announcement">
+        <p><img src="/static/images/new.gif" alt="NEW"> サイトは随時更新中です！ブックマークしてまた遊びに来てください！</p>
+        <p>当サイトは<img src="/static/images/ie_logo.gif" alt="Internet Explorer">と<img src="/static/images/netscape_logo.gif" alt="Netscape">での閲覧を推奨しています。</p>
+    </div>
+</div>
+{% endblock %}

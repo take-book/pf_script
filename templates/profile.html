@@ -1,0 +1,153 @@
+<!-- templates/profile.html -->
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="content-box">
+    <h2>プロフィール</h2>
+    
+    <div class="profile-section">
+        <img src="/static/images/profile-photo.jpg" alt="プロフィール写真" class="float-right profile-photo">
+        
+        <table class="profile-table">
+            <tr>
+                <th>名前</th>
+                <td>山田 太郎</td>
+            </tr>
+            <tr>
+                <th>職業</th>
+                <td>Webエンジニア / プログラマー</td>
+            </tr>
+            <tr>
+                <th>場所</th>
+                <td>東京都</td>
+            </tr>
+            <tr>
+                <th>生年月日</th>
+                <td>19XX年X月X日</td>
+            </tr>
+            <tr>
+                <th>血液型</th>
+                <td>O型</td>
+            </tr>
+        </table>
+        <div class="clear"></div>
+    </div>
+    
+    <div class="about-me">
+        <h3><img src="/static/images/star.gif" alt="★"> 自己紹介 <img src="/static/images/star.gif" alt="★"></h3>
+        <p>はじめまして！私は<strong>山田 太郎</strong>と申します。Webエンジニアとして活動しています。</p>
+        <p>このポートフォリオサイトでは、私の制作したプロジェクトや技術的な取り組みを紹介しています。</p>
+        <p>2000年代からWebの世界に魅了され、現在も様々な技術を学びながら開発を続けています。</p>
+        <p>特にPythonとJavaScriptを使った開発を得意としており、サーバーサイドからフロントエンドまで幅広く対応可能です。</p>
+    </div>
+</div>
+
+<div class="content-box">
+    <h2>スキル</h2>
+    
+    <div class="skills-section">
+        <h3>プログラミング言語</h3>
+        <ul class="skill-list">
+            <li><span class="skill-name">Python</span> <span class="skill-level">★★★★★</span></li>
+            <li><span class="skill-name">JavaScript</span> <span class="skill-level">★★★★☆</span></li>
+            <li><span class="skill-name">HTML/CSS</span> <span class="skill-level">★★★★★</span></li>
+            <li><span class="skill-name">PHP</span> <span class="skill-level">★★★☆☆</span></li>
+            <li><span class="skill-name">SQL</span> <span class="skill-level">★★★★☆</span></li>
+        </ul>
+        
+        <h3>フレームワーク・ライブラリ</h3>
+        <ul class="skill-list">
+            <li><span class="skill-name">Sanic</span> <span class="skill-level">★★★★☆</span></li>
+            <li><span class="skill-name">Flask</span> <span class="skill-level">★★★★★</span></li>
+            <li><span class="skill-name">Django</span> <span class="skill-level">★★★☆☆</span></li>
+            <li><span class="skill-name">React</span> <span class="skill-level">★★★★☆</span></li>
+            <li><span class="skill-name">Vue.js</span> <span class="skill-level">★★★☆☆</span></li>
+        </ul>
+        
+        <h3>その他のスキル</h3>
+        <ul class="skill-list">
+            <li><span class="skill-name">Git/GitHub</span> <span class="skill-level">★★★★☆</span></li>
+            <li><span class="skill-name">Docker</span> <span class="skill-level">★★★☆☆</span></li>
+            <li><span class="skill-name">AWS</span> <span class="skill-level">★★★☆☆</span></li>
+            <li><span class="skill-name">データベース設計</span> <span class="skill-level">★★★★☆</span></li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-box">
+    <h2>経歴</h2>
+    
+    <div class="history-section">
+        <table class="history-table">
+            <tr>
+                <th>期間</th>
+                <th>所属</th>
+                <th>内容</th>
+            </tr>
+            <tr>
+                <td>20XX年4月〜現在</td>
+                <td>株式会社XXX</td>
+                <td>Webアプリケーション開発</td>
+            </tr>
+            <tr>
+                <td>20XX年4月〜20XX年3月</td>
+                <td>株式会社YYY</td>
+                <td>フロントエンド開発</td>
+            </tr>
+            <tr>
+                <td>20XX年4月〜20XX年3月</td>
+                <td>株式会社ZZZ</td>
+                <td>システムエンジニア</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div class="education-section">
+        <h3>学歴</h3>
+        <ul>
+            <li>20XX年 XXX大学 情報工学部 卒業</li>
+            <li>20XX年 XXX高等学校 卒業</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-box">
+    <h2>趣味・特技</h2>
+    
+    <div class="hobbies-section">
+        <h3>趣味</h3>
+        <ul>
+            <li>プログラミング（個人開発）</li>
+            <li>古いコンピュータの収集</li>
+            <li>レトロゲーム</li>
+            <li>音楽鑑賞</li>
+            <li>読書（技術書、SF小説）</li>
+        </ul>
+        
+        <h3>特技</h3>
+        <ul>
+            <li>タイピング（xxx打/分）</li>
+            <li>バグの発見と修正</li>
+            <li>複雑な問題の単純化</li>
+        </ul>
+    </div>
+</div>
+
+<div class="content-box">
+    <h2>連絡先</h2>
+    
+    <div class="contact-section">
+        <p><img src="/static/images/email.gif" alt="Email"> Email: xxxxx@example.com</p>
+        <p><img src="/static/images/github.gif" alt="GitHub"> GitHub: <a href="https://github.com/username" target="_blank">github.com/username</a></p>
+        <p><img src="/static/images/twitter.gif" alt="Twitter"> Twitter: <a href="https://twitter.com/username" target="_blank">@username</a></p>
+        
+        <div class="blink">※ スパム防止のため、連絡はフォームからお願いします。</div>
+        
+        <div class="contact-form-link">
+            <a href="#" onclick="alert('申し訳ありませんが、現在お問い合わせフォームは準備中です。');">
+                <img src="/static/images/mailform.gif" alt="お問い合わせフォーム">
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

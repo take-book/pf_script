@@ -1,0 +1,77 @@
+<!-- templates/layout.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }} - レトロポートフォリオ</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- 2000年代風のアイコン -->
+    <link rel="icon" href="/static/images/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=800">
+    <!-- 2000年代のメタタグ -->
+    <meta name="keywords" content="ポートフォリオ, レトロ, 2000年代, ウェブデザイン, HTML, CSS">
+    <meta name="description" content="2000年代風のレトロなポートフォリオサイトへようこそ！">
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>マイ・レトロポートフォリオ</h1>
+            <marquee scrollamount="3">★★★ ようこそ！2000年代風のポートフォリオサイトへ！最終更新: {{ current_time }} ★★★</marquee>
+        </div>
+        
+        <div id="content-wrapper">
+            <div id="sidebar">
+                <div class="sidebar-box">
+                    <h3>メニュー</h3>
+                    <ul>
+                        <li><a href="/">ホーム</a></li>
+                        <li><a href="/profile">プロフィール</a></li>
+                        <li><a href="/projects">プロジェクト</a></li>
+                        <li><a href="/links">リンク集</a></li>
+                        <li><a href="/guestbook">ゲストブック</a></li>
+                    </ul>
+                </div>
+                
+                <div class="sidebar-box">
+                    <h3>訪問者カウンター</h3>
+                    <div class="counter">
+                        あなたは{{ visitor_count }}人目の訪問者です！
+                    </div>
+                </div>
+                
+                <div class="sidebar-box">
+                    <h3>相互リンク</h3>
+                    <div class="banners">
+                        <a href="#"><img src="/static/images/banner1.gif" alt="相互リンク1"></a>
+                        <a href="#"><img src="/static/images/banner2.gif" alt="相互リンク2"></a>
+                        <a href="#"><img src="/static/images/banner3.gif" alt="相互リンク3"></a>
+                    </div>
+                </div>
+                
+                <div class="sidebar-box">
+                    <h3>現在の時間</h3>
+                    <div class="clock">
+                        {{ current_time }}
+                    </div>
+                </div>
+            </div>
+            
+            <div id="main-content">
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+        
+        <div id="footer">
+            <p>Copyright &copy; 2025 マイ・レトロポートフォリオ All Rights Reserved.</p>
+            <p><small>このサイトは懐かしの2000年代スタイルで制作されています。最適な表示には800×600以上の解像度を推奨します。</small></p>
+            <div class="validator">
+                <a href="https://validator.w3.org/"><img src="/static/images/valid-html.png" alt="Valid HTML"></a>
+                <a href="https://jigsaw.w3.org/css-validator/"><img src="/static/images/valid-css.png" alt="Valid CSS"></a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 2000年代風JavaScript効果 -->
+    <script src="/static/js/retro.js"></script>
+</body>
+</html>

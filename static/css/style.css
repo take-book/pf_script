@@ -1,0 +1,441 @@
+/* static/css/style.css */
+body {
+    background-image: url('/static/images/bg-tile.gif');
+    font-family: "MS Gothic", "Arial", sans-serif;
+    color: #000080;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+}
+
+#container {
+    width: 780px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border-left: 2px solid #666666;
+    border-right: 2px solid #666666;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#header {
+    background-color: #000080;
+    color: #FFFFFF;
+    padding: 10px;
+    border-bottom: 5px solid #FFD700;
+    text-align: center;
+}
+
+#header h1 {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 24px;
+    text-shadow: 2px 2px 1px #000000;
+    letter-spacing: 2px;
+}
+
+marquee {
+    background-color: #FFD700;
+    color: #000080;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#content-wrapper {
+    display: flex;
+    min-height: 400px;
+}
+
+#sidebar {
+    width: 200px;
+    background-color: #F0F8FF;
+    padding: 10px;
+    border-right: 1px dashed #999999;
+}
+
+.sidebar-box {
+    margin-bottom: 20px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.sidebar-box h3 {
+    margin: 0;
+    padding: 5px;
+    background-color: #000080;
+    color: #FFFFFF;
+    font-size: 14px;
+    text-align: center;
+}
+
+.sidebar-box ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-box ul li {
+    border-bottom: 1px dotted #CCCCCC;
+}
+
+.sidebar-box ul li a {
+    display: block;
+    padding: 5px 10px;
+    color: #000080;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sidebar-box ul li a:hover {
+    background-color: #E6E6FA;
+    color: #FF0000;
+    text-decoration: underline;
+}
+
+.counter {
+    background-color: #000000;
+    color: #00FF00;
+    font-family: "Courier New", monospace;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.banners {
+    padding: 10px;
+    text-align: center;
+}
+
+.banners img {
+    margin: 5px 0;
+    border: 1px solid #CCCCCC;
+    max-width: 88px;
+    max-height: 31px;
+}
+
+.clock {
+    padding: 10px;
+    text-align: center;
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+}
+
+#main-content {
+    flex: 1;
+    padding: 15px;
+    background-color: #FFFFFF;
+}
+
+.content-box {
+    margin-bottom: 20px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #F9F9F9;
+}
+
+.content-box h2 {
+    margin-top: 0;
+    padding: 5px;
+    background-color: #E6E6FA;
+    border-left: 5px solid #000080;
+    color: #000080;
+    font-size: 18px;
+}
+
+.float-right {
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+.float-left {
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.date {
+    color: #FF0000;
+    font-weight: bold;
+}
+
+.news-section ul {
+    list-style-image: url('/static/images/bullet.gif');
+    padding-left: 30px;
+}
+
+.project-highlight {
+    padding: 10px;
+}
+
+.announcement {
+    background-color: #FFFFC0;
+    border: 1px dashed #FF9900;
+    padding: 10px;
+    text-align: center;
+}
+
+#footer {
+    background-color: #000080;
+    color: #FFFFFF;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    border-top: 5px solid #FFD700;
+}
+
+#footer a {
+    color: #FFD700;
+}
+
+.validator {
+    margin-top: 10px;
+}
+
+.validator img {
+    margin: 0 5px;
+    border: 0;
+}
+
+/* 2000年代風のリンクスタイル */
+a {
+    color: #0000FF;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #FF0000;
+}
+
+a:visited {
+    color: #800080;
+}
+
+/* アニメーションホバーエフェクト */
+a:hover img {
+    opacity: 0.8;
+}
+
+/* プロフィールページのスタイル */
+.profile-photo {
+    border: 3px solid #CCCCCC;
+    padding: 5px;
+    background-color: #FFFFFF;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.profile-table {
+    width: 60%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.profile-table th, .profile-table td {
+    border: 1px solid #CCCCCC;
+    padding: 5px 10px;
+}
+
+.profile-table th {
+    background-color: #E6E6FA;
+    color: #000080;
+    text-align: right;
+    width: 30%;
+}
+
+.skill-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill-list li {
+    margin-bottom: 5px;
+    border-bottom: 1px dotted #CCCCCC;
+    padding-bottom: 5px;
+}
+
+.skill-name {
+    display: inline-block;
+    width: 150px;
+    font-weight: bold;
+}
+
+.skill-level {
+    color: #FF6600;
+}
+
+.history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+.history-table th, .history-table td {
+    border: 1px solid #CCCCCC;
+    padding: 5px;
+}
+
+.history-table th {
+    background-color: #E6E6FA;
+    color: #000080;
+}
+
+.blink {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+    color: #FF0000;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+.contact-form-link {
+    text-align: center;
+    margin: 15px 0;
+}
+
+/* プロジェクトページのスタイル */
+.project-item {
+    border-bottom: 1px dashed #CCCCCC;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.project-item:last-child {
+    border-bottom: none;
+}
+
+.project-meta {
+    font-size: 12px;
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+.project-date, .project-tech {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.project-img {
+    border: 3px solid #CCCCCC;
+    padding: 3px;
+    background-color: #FFFFFF;
+    max-width: 200px;
+}
+
+.project-details {
+    margin: 15px 0;
+    background-color: #F5F5F5;
+    padding: 10px;
+    border: 1px solid #EEEEEE;
+}
+
+.project-details h4 {
+    margin-top: 0;
+    color: #000080;
+}
+
+.project-links {
+    margin-top: 15px;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #E6E6FA;
+    color: #000080;
+    border: 2px outset #CCCCCC;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.project-link:hover {
+    background-color: #000080;
+    color: #FFFFFF;
+}
+
+.mini-projects-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.mini-projects-table th, .mini-projects-table td {
+    border: 1px solid #CCCCCC;
+    padding: 8px;
+    text-align: left;
+}
+
+.mini-projects-table th {
+    background-color: #E6E6FA;
+    color: #000080;
+}
+
+.mini-projects-table tr:nth-child(even) {
+    background-color: #F5F5F5;
+}
+
+.mini-projects-table tr:hover {
+    background-color: #FFFFC0;
+}
+
+.work-project-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #F9F9F9;
+    border-left: 5px solid #000080;
+}
+
+.note {
+    font-style: italic;
+    color: #666666;
+    margin-bottom: 15px;
+}
+
+.coming-soon {
+    text-align: center;
+    padding: 10px;
+}
+
+.center-img {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+/* 2000年代風のフォーム要素 */
+input, textarea, select {
+    border: 2px inset #CCCCCC;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: "MS Gothic", "Arial", sans-serif;
+    padding: 3px;
+    margin: 2px 0;
+}
+
+button, input[type="submit"] {
+    border: 2px outset #CCCCCC;
+    background-color: #E6E6FA;
+    color: #000080;
+    font-weight: bold;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+
+button:active, input[type="submit"]:active {
+    border-style: inset;
+}
