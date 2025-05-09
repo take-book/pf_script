@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: retro-portfolio
+    env: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /
+    envVars:
+      - key: PORT
+        value: 8000
+    buildCommand: docker build -t retro-portfolio .
+    startCommand: docker run -p 8000:8000 retro-portfolio

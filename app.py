@@ -5,6 +5,10 @@ from jinja2 import Environment, FileSystemLoader
 import os
 import time
 
+# 環境変数からポートを取得（Renderではこれが必要）
+PORT = int(os.environ.get("PORT", 8000))
+HOST = os.environ.get("HOST", "0.0.0.0")
+
 app = Sanic("RetroPortfolio")
 
 # 静的ファイル（CSS, 画像など）の設定
@@ -52,25 +56,54 @@ async def home(request):
 @app.route('/profile')
 async def profile(request):
     template = env.get_template('profile.html')
-    return html(template.render(title="プロフィール"))
+    # 現在の日時データ
+    current_time = time.strftime("%Y-%m-%d %H:%M:%S")
+    return html(template.render(
+        title="プロフィール",
+        visitor_count=get_visitor_count(),
+        current_time=current_time
+    ))
 
 # プロジェクトページ
 @app.route('/projects')
 async def projects(request):
     template = env.get_template('projects.html')
-    return html(template.render(title="プロジェクト"))
+    # 現在の日時データ
+    current_time = time.strftime("%Y-%m-%d %H:%M:%S")
+    return html(template.render(
+        title="プロジェクト",
+        visitor_count=get_visitor_count(),
+        current_time=current_time
+    ))
 
 # リンク集ページ
 @app.route('/links')
 async def links(request):
     template = env.get_template('links.html')
-    return html(template.render(title="リンク集"))
+    # 現在の日時データ
+    current_time = time.strftime("%Y-%m-%d %H:%M:%S")
+    return html(template.render(
+        title="リンク集",
+        visitor_count=get_visitor_count(),
+        current_time=current_time
+    ))
 
 # ゲストブックページ
 @app.route('/guestbook')
 async def guestbook(request):
     template = env.get_template('guestbook.html')
-    return html(template.render(title="ゲストブック"))
+    # 現在の日時データ
+    current_time = time.strftime("%Y-%m-%d %H:%M:%S")
+    return html(template.render(
+        title="ゲストブック",
+        visitor_count=get_visitor_count(),
+        current_time=current_time
+    ))
+
+# ヘルスチェックエンドポイント（Render用）
+@app.route('/health')
+async def health(request):
+    return html("<h1>OK</h1>")
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8000, debug=True)
+    app.run(host=HOST, port=PORT)
